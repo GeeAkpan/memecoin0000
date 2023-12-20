@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0000 Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts Links For Icons and Bangers Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-MBXkzh1hiXxs98/IO87ZFNdsXOnx9R+PWHeESfQzGJzt4geS74yPPX6Sd8Lbu9gQFiKOz5qX5HdoY2An1NhRkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">0000</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Twitter</li>
+          <li><a href="#">Join our Community</a></li>
+          <li><a href="#">Buy Now</li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <p>
+            You do not need a website because:
+        </p>
+        <h2>Everything goes to 0000</h2>
+        <p>
+            We are here to have fun, and make moniesssss.
+        </p>
+        <button>Buy Now</button>
+      </div>
+
+    </section>
+
+    
+    
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
